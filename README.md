@@ -1,9 +1,9 @@
 ﻿# Currency-calculator
  ## Description:
  Types of currency calculations :
- - USD/PLN or PLN/USD
- - EUR/PLN or PLN/EUR
- - GBP/PLN or PLN/GBP
+ - PLN/USD or USD/PLN
+ - EUR/PLN or PLN/EUR 
+ - PLN/GBP or GBP/PLN 
 
  ## Instruction
  ![Cantor gif](gif/cantor2.gif)
