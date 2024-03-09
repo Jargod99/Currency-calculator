@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after ::before {
+    box-sizing: inherit;
+}
+
+.backgroundImages{
+    background-image: url("../img/waluty.bmp");
+   
+    background-size: cover;
+}
+
+.container {
+    font-family: "Protest Riot", sans-serif;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.form__fieldset {
+
+    background-color: rgba(255, 217, 0, 0.918);
+   
+    border-radius: 20%;
+    box-shadow: 10px -6px 10px #ccc;
+}
+
+.form__legend {
+    text-align: center;
+    font-size: 40px;
+    color: green;
+}
+
+.form__title {
+    text-align: center;
+    color: rgb(88, 88, 197);
+    text-shadow: 2px 3px 4px;
+}
+
+.form__list {
+    display: flex;
+    padding-left: 0;
+}
+
+.form__labelText {
+    display: inline-block;
+    width: 100%;
+    max-width: 40px;
+    margin-right: 5px;
+}
+
+.form__field {
+    border: 1px solid #998787f7;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    height: auto;
+}
+
+.form__fieldAmount {
+    display: block;
+    margin: 10px auto;
+}
+
+.form__field:read-only {
+    background-color: #dddada;
+    max-width: 100px;
+    padding: 5px;
+}
+
+.form__underList {
+    list-style-type: none;
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    padding-left: 0;
+}
+
+.form__underList--brighter {
+    max-width: 250px;
+}
+
+.form__underList--darker {
+    background-color: rgba(134, 113, 27, 0.295);
+    max-width: 250px;
+    outline: 6px double rgba(134, 113, 27, 0.295);
+}
+
+.form__select {
+    border-radius: 10px;
+    background: rgb(123, 248, 248);
+    padding: 10px;
+    display: block;
+    margin: 5px auto;
+    width: 200px;
+    text-align: center;
+}
+
+.form__select:hover {
+    background: rgb(77, 231, 231);
+}
+
+.form__result {
+    font-size: 20px;
+}
+
+.form__result--colorRed {
+    color: rgb(218, 51, 51);
+}
+
+form__result--colorBlack {
+    color: black;
+}
+
+.form__button {
+    width: 100%;
+    max-width: 200px;
+    border: none;
+    background-color: limegreen;
+    border-radius: 20PX;
+    height: 30PX;
+}
+
+.form__button:hover {
+    background-color: rgb(26, 170, 26);
+    color: #ddd;
+    outline: 6px double rgb(26, 170, 26);
+}
+
+.form__button.form__removeButton {
+    background-color: red;
+}
+
+.form__removeButton:hover {
+    background-color: rgb(181, 57, 57);
+    outline: 6px double rgb(181, 57, 57);
+}
+
+.form__refreshButton {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(75, 221, 170, 0.556);
+    color: rgb(10, 11, 11);
+}
+
+.form__refreshButton:hover {
+    background-color: red;
+    color: white;
+    outline: 6px double red;
+}
+
+.form__refreshButton:active {
+    background-color: rgb(179, 64, 64);
+    color: blue;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta property="og:image" content="img/waluty.bmp">
+    <link rel="icon" href="img/walutaico.bmp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body class="backgroundImages">
+    <div class="container">
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kantor</legend>
+                <h2 class="form__title">Kursy walut</h2>
+                <ul class="form__list">
+                    <ul class="form__underList form__underList--brighter js-form__underListSale">
+                        <Li>
+                            <p></p>
+                            <label>
+                                <input type="radio" name="radio" class=" js-form__radioSale">
+                            </label>Sprzedaż
+                            </p>
+                        </Li>
+                        <li>
+                            <p><span class="form__labelText">Dolar:</span>
+                                <label>
+                                    <input readonly class="form__field  js-form__fieldDolarSale">
+                                </label>
+                            </p>
+                        </Li>
+                        <li>
+                            <p><span class="form__labelText">Euro:</span>
+                                <label>
+                                    <input readonly class="form__field  js-form__fieldEuroSale">
+                                </label>
+                            </p>
+                        </li>
+                        <li>
+                            <p><span class="form__labelText">Funt:</span>
+                                <label>
+                                    <input readonly class="form__field  js-form__fieldFuntSale">
+                                </label>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="form__underList form__underList--brighter js-form__underListBuy">
+                        <Li>
+                            <p>
+                                <label>
+                                    <input type="radio" name="radio" class=" js-form__radioBuy">
+                                </label>Kupno
+                            </p>
+                        </Li>
+                        <li>
+                            <p>
+                                <label><span class="form__labelText">Dolar:</span>
+                                    <input readonly class="form__field  js-form__fieldDolarBuy">
+                                </label>
+                            </p>
+                        </Li>
+                        <li>
+                            <p>
+                                <label><span class="form__labelText">Euro:</span>
+                                    <input readonly class="form__field js-form__fieldEuroBuy">
+                                </label>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <label><span class="form__labelText">Funt:</span>
+                                    <input readonly class="form__field  js-form__fieldFuntBuy">
+                                </label>
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+                <p>
+                    <button type="button" class="form__refreshButton js-form__refreshButton">Odśwież notowania
+                        walut</button>
+                </p>
+                <ul class="form__list">
+                    <ul class="form__underList  ">
+                        <li>
+                            <p>Wybierz walutę:</p>
+                            <p>
+                                <label>
+                                    <select class="form__select js-form__select">
+                                        <option>Dolar</option>
+                                        <option>Euro</option>
+                                        <option>Funt</option>
+                                    </select>
+                                </label>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Wpisz kwotę jaką chcesz wymienić <span class="js-form__textAmount"></span>:</p>
+                            <p>
+                                <label>
+                                    <input type="number" step="any" min="0" max="1000000"
+                                        class="form__field form__fieldAmount js-form__fieldAmount">
+                                </label>
+
+                            </p>
+
+                            <p>
+                                <button class="form__button">Oblicz</button>
+                            </p>
+                            <p>
+                                <button type="button"
+                                    class="form__button form__removeButton js-form__removeButton ">Wyczyść</button>
+                            </p>
+                            <p class="form__result">
+                                Należność : <strong><span class="js-form__result"></span><span
+                                        class="js-form__resultSymbol"></span></strong>
+                            </p>
+                        </li>
+                    </ul>
+                </ul>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
