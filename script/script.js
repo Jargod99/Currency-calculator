@@ -144,7 +144,6 @@
             const textInput = changeTextAmount(selectElement, radioBuyElement);
             textAmount.innerText = (textInput);
 
-
             removeButtonClick(selectElement, radioSaleElement, radioBuyElement, underListSale, underListBuy, amount, textAmount, resultElement, resultSymbol);
 
         });
