@@ -1,6 +1,6 @@
 ﻿# Currency-calculator
  ## Description:
- Calculate currency :
+ Types of currency calculations :
  - USD/PLN or PLN/USD
  - EUR/PLN or PLN/EUR
  - GBP/PLN or PLN/GBP
